@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <link rel="shortcut icon" type="image/png" th:href="@{/images/favicon.png}">
+    <title>Vote Cast (ABN North Primaries)</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/all.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/brands.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/solid.css}">
+    <link rel='stylesheet' href='webjars/bootstrap/3.4.1/css/bootstrap.min.css'>
+
+    <!-- FontAwesome -->
+    <link rel='stylesheet' href='webjars/font-awesome/5.13.0/css/font-awesome.min.css'>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Quicksand:400,500,600,700|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+
+
+    <!-- Scripts JQuery, PopperJs & Bootstrap -->
+    <script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="login">
+	   	<div class="container">
+	   		<div class="row">
+	   			<div class="col">
+					<div class="login-clean">
+				        <form action="#" th:action="@{/doLogin}" method="post">
+				            <div class="app-image">
+				            	<img th:src="@{/images/npp.jpeg}" alt="New Patriotic Party (NPP)">
+				            </div>
+				            <div class="form-heading">
+				                <h5>DELEGATE LOGIN ACCESS</h5>
+				            	<p>SECURE ACCESS TO VOTING PORTAL BY ALL DELEGATES</p>
+				            </div>
+				            <div class="form-group">
+				            	<input class="form-control" type="text" id="voterid" placeholder="Please enter your Voter ID">
+				            </div>
+				            <div class="login-submit">
+				            	<button class="btn login-button btn-block" type="submit">Submit</button>
+				            </div>
+				            <a class="forgot" href="#">Difficulty verifying your Voter ID Number?</a>
+				        </form>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+    </div>
+    
+    <footer class="footer-basic">
+    	<div class="social">
+    		<a href="#"><i class="fab fa-instagram"></i></a>
+		    <a href="#"><i class="fab fa-github"></i></a>
+	        <a href="#"><i class="fab fa-twitter"></i></a>
+	        <a href="#"><i class="fab fa-whatsapp"></i></a>
+	        <a href="#"><i class="fab fa-facebook"></i></a>
+	    </div>
+           	
+        <div class="disclaimer row align-items-center text-center text-lg-left no-gutters">
+       		<p><strong>Disclaimer: </strong>This is a test system for the Ablekuma North Parliamentary Primaries. And as such, the design, development and the application of such system does not in anyway prove to be the true reflection of decisions made and actions taken by the New Patriotic Party and the Electoral Commission of Ghana.</p>
+      	</div>
+   </footer>
+</body>
+</html>
